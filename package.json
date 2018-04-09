@@ -1,0 +1,25 @@
+{
+  "name": "css-layout",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Benfarhat/CSS-Layout-Examples.git"
+  },
+  "keywords": [],
+  "author": "Benfarhat Elyes <benfarhat.elyes@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Benfarhat/CSS-Layout-Examples/issues"
+  },
+  "homepage": "https://github.com/Benfarhat/CSS-Layout-Examples#readme",
+  "devDependencies": {
+    "live-server": "^1.2.0",
+    "node-sass": "^4.8.3",
+    "nodemon": "^1.17.3"
+  }
+}
