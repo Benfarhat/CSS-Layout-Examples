@@ -2,8 +2,8 @@
 
 Il existe deux méthodes de mise en place et disposition des élements de votre interface en CSS
 
-- [Flexbox](docs/flexbox)
-- [CSS Grid](cssgrid)
+- [Flexbox](docs/flexbox.md)
+- [CSS Grid](cssgrid.md)
 
 Flexbox permet une gestion unidirectionnelle (en vous basant uniquement soit sur l'axe horizontal / ligne soit l'axe vertical / colonne) des élements. Si par exemple vous avez 5 élements sur une ligne et que le 6 ème passe à la ligne suivante (via la propriété flex-wrap) alors il n'est pas possible de le faire sans modifier l'élement (via notamment flex-basis, flex-grow ou flex-shrink)
 CSS Gris contrôle simultanément l'espace bidirectionel (horizontal et vertical) 
