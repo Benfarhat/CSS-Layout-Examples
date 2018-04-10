@@ -1,3 +1,4 @@
+[&laquo; Retour](../README.md) 
 # Flexbox
 
 Flexbox est le modules des boites flexibles, il nous permet la réalisation d'interface simplement en nous basant sur une direction de référence.
@@ -6,6 +7,12 @@ Dans flexbox il y a deux groupes d'élements:
 
 * Les conteneurs (flex-containers)
 * Les élements (flex-items)
+
+## La grande question: Est ce supporté?
+
+D'après ["can i use"](https://caniuse.com/#feat=flexbox) près de 97% des navigateurs le supporte (avec un peu plus de 99% pour les utilisateurs mobiles suivi). Il n'y a donc aucun raison de s'en privé.
+Par contre si jamais vous tenez a être absoluement rétro-compatible et supporté les quelques utilisateurs qui ont décidé de ne jamais mettre à jour leur navigateurs alors il est préférable de consulter sur cette même page les "known issues".
+
 
 
 ## Main axis et Cross Axis
@@ -43,6 +50,8 @@ Celui ci doit avoir une des deux valeurs suivantes de la propriétés display po
 
 - flex
 - inline-flex
+
+Flex permet d'occuper tout l'axe principal, alors que inline-flex seulement la partie occupée par le contenu (c'est légérement l'identique de block et inline-block)
 
 Si l'on veut travailler sur plusieurs lignes (cas par exemple de l'affichage d'images ou d'articles) ou plusieurs colonnes, on utilise la propriété 
 
@@ -141,7 +150,12 @@ body{
 
 ```
 
-## Flex items
+### Flex-wrap
+
+Comme il l'a été dit [plus tot](../README.md), l'unidirectionalité fait en sorte qu'on fonctionne par ligne ou par colonne, si on veut passer à un mode multiligne ou milti-colonne alorsil faut modifier la valeur de la propriété flex-wrap. Dans le cas ou l'axe principal est horizontal, cela est similaire à la propriété CSS white-space qui passe de no-wrap (valeur par defaut ) aux valeurs "normal", "pre-wap" ou encore "pre-line" qui permettent un retour automatique à la ligne (dans le cas ou il s'agit d'un text sans espace c'est la propriété overflow-wrap qui est utilisée en passant de normal pour l'uni-ligne à break-work pour le multi-ligne).
+
+
+## Flex items 
 
 En ce qui concerne les élements flexible, nous avons les propriétés :
 
@@ -151,4 +165,31 @@ En ce qui concerne les élements flexible, nous avons les propriétés :
 - Flex-basis - Taille initiale
 - Align-self - Alignement
 
+
+
+
+### Espace libre positif et négatif
+
+Un espace libre positif est l'espace qui après disposition des items reste alors que l'espace libre négatif est l'espace qui après disposition des items dépasse. 
+L'espace libre positif est donc un espace que l'on pourrait répartir entre les éléments flexible
+L'espace libre négative est l'espace a retiré des éléments flexibles pour qu'ils soient contenus dans le conteneur
+
+### Flex-basis
+
+Ainsi, la propriété flex-basis (par defaut à auto) est la taille initiale de l'élément flexible ava,t la répartition de l'espace. Flex-basis à 0 veut dire que l'on va ignoré la taille du contenu et que l'espace disponible pourra être réparti.
+
+La valeur content veut dire qu'elle se fera automatiquement selon le contenu .
+La valeur auto veut dire que l'on se refère à la valeur de width (pour les flex-direction row) ou de height (pour les flex-direction à column)
+
+### Flex-grow
+
+Cette propriété représente le coéfficient d'agrandissement de l'élement flexible par rapport aux autres éléments flexibles appartenant au même conteneur.
+Vu qu'il s'agit d'un ratio, une même valeur de flex-grow pour tous les enfants flexibles d'un conteneur, veut dire que la répartition de l'espace libre se fera équitablement
+
+#### Flex-grow et flex-basis
+
+Lorsque les deux paramètres sont utilisés en même temps, alors le calcul des tailles finales n'est plus aussi évident.
+
+
+@todo wip
 
