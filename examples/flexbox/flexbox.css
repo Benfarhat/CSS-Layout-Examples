@@ -338,12 +338,6 @@
     color: #474787
   }
 
-  .btn{
-    padding: 8px 16px
-  }
-  .btn:hover{
-    background: rgba(0,0,0,.1)
-  }
 
   .bg-dark a, .bg-primary a, .bg-success a, .bg-danger a, .bg-info a{
     color:#f1f1f1;
@@ -420,4 +414,15 @@
   .img-right{
     float: right;
     margin: 0 0 32px 32px
+  }
+
+  .btn{
+    padding: 8px 16px
+  }
+  .btn:hover{
+    background: rgba(0,0,0,.1)
+  }
+
+  a.bg-primary, a.bg-success, a.bg-info, a.bg-danger, a.bg-warning {
+    color: #fff;
   }
