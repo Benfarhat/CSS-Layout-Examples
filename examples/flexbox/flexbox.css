@@ -409,8 +409,15 @@
     background-color: #ddd
   }
 
+  /* Img */
   img{
     max-width:50%;
-    float:left;
+  }
+  .img-left{
+    float: left;
     margin: 0 32px 32px 0
+  }
+  .img-right{
+    float: right;
+    margin: 0 0 32px 32px
   }
