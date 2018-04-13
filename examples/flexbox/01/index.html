@@ -10,22 +10,31 @@
 </head>
 <body>
     <div class="flex col">
-        <header class="flex row bg-primary text-white">
-            <div class="col-span-2 bwr flex justify-content-center align-items-center">
-                <span><a class="p-4-8" href="#">Company</a></span>
+        <header class="flex row text-white">
+            <div class="bg-success col-span-2 bwr flex justify-content-center align-items-center">
+                <span><a class="p-4-8" href="javascript:void(0)">Company</a></span>
             </div>
-            <nav class="navbar col-span-10 flex row justify-content-space-between">
+            <nav class="bg-info navbar col-span-10 flex row justify-content-space-between">
                     <ul class="flex row p-0 m-0 justify-content-space-between">
-                        <li class="btn"><a href="#"><i class="fa fa-home"></i></a></li>
-                        <li class="btn"><a href="#"><i class="fa fa-building"></i></a></li>
-                        <li class="btn"><a href="#"><i class="fa fa-users"></i></a></li>
-                        <li class="btn"><a href="#">element</a></li>
+                        <li><a href="javascript:void(0)"><i class="fa fa-home"></i></a></li>
+                        <li><a href="javascript:void(0)"><i class="fa fa-building"></i></a></li>
+                        <li><a href="javascript:void(0)"><i class="fa fa-users"></i></a></li>
+                        <li class="dropdown flex col justify-content-stretch">
+                                <a class="dropbtn">Dropdown Menu</a>
+                                <div class="dropdown-content flex col">
+                                  <a href="javascript:void(0)">Link 1</a>
+                                  <a href="javascript:void(0)">Link 2</a>
+                                  <a href="javascript:void(0)">Link 3</a>
+                                </div>
+                        </li>
+                        <li><a href="javascript:void(0)">element</a></li>
                     </ul>
                     <ul class="flex row p-0 m-0 justify-content-space-between">
-                        <li class="btn"><a href="#">help</a></li>
+                        <li><a href="javascript:void(0)">help</a></li>
+                        <!--
                         <li>
                                 <div class="dropdown flex col justify-content-stretch">
-                                        <a class="dropbtn btn m-b-0">Dropdown Menu</a>
+                                        <a class="dropbtn">Dropdown Menu</a>
                                         <div class="dropdown-content flex col">
                                           <a href="javascript:void(0)">Link 1</a>
                                           <a href="javascript:void(0)">Link 2</a>
@@ -33,20 +42,29 @@
                                         </div>
                                       </div>
                         </li>
+                    -->
+                        <li class="dropdown flex col justify-content-stretch">
+                                        <a class="dropbtn">Dropdown Menu</a>
+                                        <div class="dropdown-content flex col">
+                                          <a href="javascript:void(0)">Link 1</a>
+                                          <a href="javascript:void(0)">Link 2</a>
+                                          <a href="javascript:void(0)">Link 3</a>
+                                        </div>
+                        </li>
                     </ul>
                 </nav>
         </header>
         <div class="flex row">
             <aside class="col-span-2 p-0 m-0 bg-light flex col sidebar p-t-16">
                 <span class="p-8-16">SIDEBAR</span>
-                <a class="p-8-16" href="#"><i class="fa fa-address-book"></i> Menu 1 </a>
-                <a class="p-8-16" href="#"><i class="fa fa-comments"></i> Menu 2 </a>
-                <a class="p-8-16" href="#"><i class="fa fa-at"></i> Menu 3 </a>
-                <a class="p-8-16" href="#"><i class="fa fa-bell"></i> Menu 4 </a>
-                <a class="p-8-16" href="#"><i class="fa fa-briefcase"></i> Menu 5 </a>
-                <a class="p-8-16" href="#"><i class="fa fa-coffee"></i> Menu 6 </a>
-                <a class="p-8-16" href="#"><i class="fa fa-cogs"></i> Menu 7 </a>
-                <a class="p-8-16" href="#"><i class="fa fa-file-alt"></i> Menu 8 </a>
+                <a class="p-8-16" href="javascript:void(0)"><i class="fa fa-address-book"></i> Menu 1 </a>
+                <a class="p-8-16" href="javascript:void(0)"><i class="fa fa-comments"></i> Menu 2 </a>
+                <a class="p-8-16" href="javascript:void(0)"><i class="fa fa-at"></i> Menu 3 </a>
+                <a class="p-8-16" href="javascript:void(0)"><i class="fa fa-bell"></i> Menu 4 </a>
+                <a class="p-8-16" href="javascript:void(0)"><i class="fa fa-briefcase"></i> Menu 5 </a>
+                <a class="p-8-16" href="javascript:void(0)"><i class="fa fa-coffee"></i> Menu 6 </a>
+                <a class="p-8-16" href="javascript:void(0)"><i class="fa fa-cogs"></i> Menu 7 </a>
+                <a class="p-8-16" href="javascript:void(0)"><i class="fa fa-file-alt"></i> Menu 8 </a>
             </aside>
             
             <section class="col-span-10 p-b-32 text-justify flex col">
@@ -63,25 +81,25 @@
                 </article>
                 <article>
                     <p>Other elements:
-                        <a class="btn bg-primary" href="#">Primary Link</a>
-                        <a class="btn bg-success" href="#">Success Link</a>
-                        <a class="btn bg-info" href="#">Info Link</a>
-                        <a class="btn bg-danger" href="#">Danger Link</a>
-                        <a class="btn bg-warning" href="#">Warning Link</a>
+                        <a class="btn bg-primary" href="javascript:void(0)">Primary Link</a>
+                        <a class="btn bg-success" href="javascript:void(0)">Success Link</a>
+                        <a class="btn bg-info" href="javascript:void(0)">Info Link</a>
+                        <a class="btn bg-danger" href="javascript:void(0)">Danger Link</a>
+                        <a class="btn bg-warning" href="javascript:void(0)">Warning Link</a>
                         
                     </p>
                 </article>
                 <article>
                         <img class="m-t-32 img-right" src="https://picsum.photos/100/100/?random" alt="picsum.photos" />
                     <p>Aliquam sollicitudin mauris est, non sagittis est consectetur ultrices. In feugiat egestas tempor. Proin accumsan, lacus eget dictum finibus, tellus nisl convallis est, sit amet porta ante diam id ligula. Praesent pellentesque risus et odio maximus fermentum. In ac tortor pretium, placerat massa nec, pretium metus. Pellentesque luctus, nibh iaculis consectetur volutpat, sem enim congue enim, in tincidunt nisi erat quis urna. Nulla pharetra rutrum ultricies.</p>
-                    <p>Nullam in mauris ex. Donec vel consectetur nisi. Duis porta turpis lorem, in condimentum massa lacinia in. Vivamus imperdiet eros elit, quis ornare turpis blandit ac. Aenean a nisi at erat mollis iaculis. In consequat nunc non mauris malesuada malesuada. Ut maximus quis sem sit amet fringilla. Pellentesque sagittis arcu quis ligula ultrices fringilla. Quisque finibus commodo nulla posuere mattis.</p><a class="btn bg-info" href="#"><i class="fa fa-plus"></i> Read more ...</a>
+                    <p>Nullam in mauris ex. Donec vel consectetur nisi. Duis porta turpis lorem, in condimentum massa lacinia in. Vivamus imperdiet eros elit, quis ornare turpis blandit ac. Aenean a nisi at erat mollis iaculis. In consequat nunc non mauris malesuada malesuada. Ut maximus quis sem sit amet fringilla. Pellentesque sagittis arcu quis ligula ultrices fringilla. Quisque finibus commodo nulla posuere mattis.</p><a class="btn bg-info" href="javascript:void(0)"><i class="fa fa-plus"></i> Read more ...</a>
                 </article>
             </section>
         </div>
         <footer class="flex row bg-dark text-white padding-16">
             <div class="col-span-4">
                 <ul>
-                    <li><a href="#">element</a></li>
+                    <li><a href="javascript:void(0)">element</a></li>
                     <li>element</li>
                     <li>element</li>
                     <li>element</li>
@@ -89,7 +107,7 @@
             </div>
             <div class="col-span-4">
                 <ul>
-                    <li><a href="#">link</a></li>
+                    <li><a href="javascript:void(0)">link</a></li>
                     <li>link</li>
                     <li>link</li>
                     <li>link</li>
@@ -97,7 +115,7 @@
             </div>
             <div class="col-span-4">
                 <ul>
-                    <li><a href="#">information</a></li>
+                    <li><a href="javascript:void(0)">information</a></li>
                     <li>information</li>
                     <li>information</li>
                     <li>information</li>
