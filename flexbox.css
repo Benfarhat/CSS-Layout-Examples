@@ -363,28 +363,35 @@ table {
 
 
   .bg-primary{
-    background: #474787
+    background: #474787;
+    color: #fff;
   }
   .bg-success{
-    background: #218c74
+    background: #218c74;
+    color: #fff;
   }
   .bg-danger{
-    background: #b33939
+    background: #b33939;
+    color: #fff;
   }
   .bg-warning{
-    background: #cd6133
+    background: #cd6133;
+    color: #fff;
   }
   .bg-info{
-    background: #227093
+    background: #227093;
+    color: #fff;
   }
   .bg-dark{
-    background: #212121
+    background: #212121;
+    color: #fff;
   }
   .bg-light{
     background: #f2f2f2
   }
   .bg-special{
-    background: #2c2c54
+    background: #2c2c54;
+    color: #fff;
   }
 
   a {
@@ -671,12 +678,6 @@ table {
 .dropdown:hover .dropdown-content {
   display: block;
 }
-/*
-.dropdown:hover .dropbtn {
-  background-color: rgba(0, 0, 0, .1)
-}
-*/
-
 
 /* Radius */
 
@@ -819,6 +820,20 @@ table {
   background: #2c2c54;
   color:#fff;
 }
+
+/* Breadcrumb */
+
+.breadcrumb {
+  padding: 8px 16px;
+}
+
+.breadcrumb ul li + li::before {
+  display: inline-block;
+  padding-right: .5rem;
+  padding-left: .5rem;
+  content: "/";
+}
+
 /* Media */
 
 
