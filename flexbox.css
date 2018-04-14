@@ -191,7 +191,12 @@ table {
   .flex-shrink-10 {flex-shrink: 10; }
 
   /* Order */
-  .order-0 {order: 0; }
+  .order--5 {order: -5; }
+  .order--4 {order: -4; }
+  .order--3 {order: -3; }
+  .order--2 {order: -2; }
+  .order--1 {order: -1; }
+  .order-0 {order: 0; } /* Default */
   .order-1 {order: 1; }
   .order-2 {order: 2; }
   .order-3 {order: 3; }
@@ -872,6 +877,28 @@ p.first-letter-5::first-letter {
 .first-letter-white::first-letter {
   color: #fff;
 }
+
+/* Picture filter effect */
+
+.grayscale{
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+.sepia{
+  -webkit-filter: sepia(100%); /* Safari 6.0 - 9.0 */
+  filter: sepia(100%);
+}
+
+img {
+  max-width: 100%
+}
+
+.img-wide{
+  width:100%;
+  height: auto;
+}
+
 /* Media */
 
 
