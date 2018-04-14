@@ -945,3 +945,14 @@ body.fixed-top-header .fixed-top-header{
     .navbar .dropdown-content {
       box-shadow: none;
   }
+  body.fixed-top-header{
+    padding-top:0;
+  }
+  
+  body.fixed-top-header .fixed-top-header{
+    position:inherit;
+    top:auto;
+    width:auto;
+    z-index:auto;
+  }
+}
