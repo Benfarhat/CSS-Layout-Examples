@@ -831,25 +831,25 @@ table {
 p.first-letter-2::first-letter {
   float: left;
   font-size: 2em;
-  margin: 0 .2em 0 0;
+  margin: 0 .1em 0 0;
 }
 
 p.first-letter-3::first-letter {
   float: left;
   font-size: 3em;
-  margin: 0 .2em 0 0;
+  margin: 0 .1em 0 0;
 }
 
 p.first-letter-4::first-letter {
   float: left;
   font-size: 4em;
-  margin: 0 .2em 0 0;
+  margin: 0 .1em 0 0;
 }
 
 p.first-letter-5::first-letter {
   float: left;
   font-size: 5em;
-  margin: 0 .2em 0 0;
+  margin: 0 .1em 0 0;
 }
 
 .first-letter-primary::first-letter {
