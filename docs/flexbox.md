@@ -214,3 +214,5 @@ Cette propriété permet de modifier l'order des éléments, par défaut la vale
 L'alignement est géré par 3 propriétés à savoir justify-content, align-content, align-items et align-self. Les valeurs possibles sont similairements identitiques (flex-start, flex-end, center, stretch, baseline, ...). 
 
 Pour comprendre leur fonctionnement il faut garder à l'esprit que flexbox est unidirectionnel, donc une valeur de flex-end peut être à gauche dans le cas d'un positionnement horizontal, en bas dans un positionnement vertical, mais également changer de position si l'on fait intervenir un changement d'ordre.
+
+La valeur stretch permet de remplir un espace dans l'axe principal (c'est la valeur par défaut dans un environnement flex).
