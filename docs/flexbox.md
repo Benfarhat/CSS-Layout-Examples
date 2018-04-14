@@ -179,17 +179,38 @@ L'espace libre négative est l'espace a retiré des éléments flexibles pour qu
 Ainsi, la propriété flex-basis (par defaut à auto) est la taille initiale de l'élément flexible ava,t la répartition de l'espace. Flex-basis à 0 veut dire que l'on va ignoré la taille du contenu et que l'espace disponible pourra être réparti.
 
 La valeur content veut dire qu'elle se fera automatiquement selon le contenu .
-La valeur auto veut dire que l'on se refère à la valeur de width (pour les flex-direction row) ou de height (pour les flex-direction à column)
+La valeur auto veut dire que l'on se refère à la valeur de width (pour les flex-direction row) ou de height (pour les flex-direction à column), elle prend donc les mêmes valeurs et utilisent les mêmes unités que celles ci (em, px, rem, %, ...)
 
 ### Flex-grow
 
 Cette propriété représente le coéfficient d'agrandissement de l'élement flexible par rapport aux autres éléments flexibles appartenant au même conteneur.
 Vu qu'il s'agit d'un ratio, une même valeur de flex-grow pour tous les enfants flexibles d'un conteneur, veut dire que la répartition de l'espace libre se fera équitablement
 
+Tous les élements à 1 veut dire que les flex-items se partageront l'espace libre.
+
+
+### Flex shrink
+
+Cette propriété peut être vu comme ayant l'effet inverse de flex-grow, une valeur de 2 veut dire qu'elle prendra 2 fois moins de place, par contre une valeur de zéro veut dire que l'élement occupera l'espace restant
+
 #### Flex-grow et flex-basis
 
 Lorsque les deux paramètres sont utilisés en même temps, alors le calcul des tailles finales n'est plus aussi évident.
 
 
-@todo wip
 
+### Flex
+
+La propriété flex permet de configurer en une seule fois les propriétés flex-grox, flex-shrink et flex-basis, il s'agit d'un raccourci (shorthand)
+
+
+### Order
+
+Cette propriété permet de modifier l'order des éléments, par défaut la valeur est de 0, il est possible d'avoir des valeurs positives mais également des valeurs négatives qui se positionneront avant les élements classés par défaut. 
+
+
+## Alignement
+
+L'alignement est géré par 3 propriétés à savoir justify-content, align-content, align-items et align-self. Les valeurs possibles sont similairements identitiques (flex-start, flex-end, center, stretch, baseline, ...). 
+
+Pour comprendre leur fonctionnement il faut garder à l'esprit que flexbox est unidirectionnel, donc une valeur de flex-end peut être à gauche dans le cas d'un positionnement horizontal, en bas dans un positionnement vertical, mais également changer de position si l'on fait intervenir un changement d'ordre.
