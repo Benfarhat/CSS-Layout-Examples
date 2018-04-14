@@ -475,6 +475,20 @@ table {
     border-bottom: 1px solid #fff;
   }
 
+  /* bal mean border - alpha - left */
+  .bal {
+    border-left: 1px solid rgba(255, 255, 255, .1);
+  }
+  .bat {
+    border-top: 1px solid rgba(255, 255, 255, .1);
+  }
+  .bar {
+    border-right: 1px solid rgba(255, 255, 255, .1);
+  }
+  .bab {
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+  }
+
   .text-justify{
     text-align: justify
   }
