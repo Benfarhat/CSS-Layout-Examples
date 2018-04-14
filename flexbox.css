@@ -611,12 +611,7 @@ table {
   display: block;
 }
 
-/*
-.navbar .dropdown-content a:hover {
-  /background-color: rgba(0, 0, 0, .2);
-  /background-color: rgba(0, 0, 0, .2)
-}
-*/
+
 .navbar .dropdown:hover .dropdown-content {
   display: block;
 }
@@ -629,10 +624,6 @@ table {
 
 .dropbtn {
   position:relative;
-  /*
-  top:11px;
-  padding: 14px 16px !important;
-  */
 }
 .dropbtn::after{
   display: inline-block;
@@ -834,6 +825,53 @@ table {
   content: "/";
 }
 
+
+/* Special First Letter */
+
+p.first-letter-2::first-letter {
+  float: left;
+  font-size: 2em;
+  margin: 0 .2em 0 0;
+}
+
+p.first-letter-3::first-letter {
+  float: left;
+  font-size: 3em;
+  margin: 0 .2em 0 0;
+}
+
+p.first-letter-4::first-letter {
+  float: left;
+  font-size: 4em;
+  margin: 0 .2em 0 0;
+}
+
+p.first-letter-5::first-letter {
+  float: left;
+  font-size: 5em;
+  margin: 0 .2em 0 0;
+}
+
+.first-letter-primary::first-letter {
+  color: #474787;
+}
+.first-letter-success::first-letter {
+  color: #218c74;
+}
+.first-letter-danger::first-letter {
+  color: #b33939;
+}
+.first-letter-info::first-letter {
+  color: #227093;
+}
+}
+.first-letter-warning::first-letter {
+  color: #cd6133;
+}
+}
+.first-letter-white::first-letter {
+  color: #fff;
+}
 /* Media */
 
 
