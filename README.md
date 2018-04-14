@@ -9,3 +9,14 @@ Flexbox permet une gestion unidirectionnelle (en vous basant uniquement soit sur
 CSS Gris contrôle simultanément l'espace bidirectionel (horizontal et vertical) 
 
 A propos des espacement (gap), bientot nous pourrons utiliser row-gap et column-gap (une fois qu'elles seront supportées par tous les navigateurs), mais pour l'instant cette modification ne peut se faire qu'avec nos bon vieux margin et padding. l'utilisation de column-gap permet par exemple à trois colonnes contenant du texte d'être parfaitement ajuster vers le bas, les margins et paddings ne pourront jamais le réaliser de manière fonctionnelle (quelque soit le texte).
+
+# DEMO
+
+Flexbox:
+
+- [Exemple 01]()
+
+Playground:
+
+- [Jeux de dés]()
+ 
