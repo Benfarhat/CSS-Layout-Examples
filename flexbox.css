@@ -667,6 +667,53 @@ table {
 */
 
 
+/* Radius */
+
+.radius-0 {
+  border-radius: none;
+}
+
+.radius-1 {
+  border-radius: 1px;
+}
+.radius-2 {
+  border-radius: 2px;
+}
+.radius-4 {
+  border-radius: 4px;
+}
+.radius-8 {
+  border-radius: 8px;
+}
+.radius-16 {
+  border-radius: 16px;
+}
+.radius-32 {
+  border-radius: 32px;
+}
+.rounded {
+  border-radius: 50%;
+}
+.radius-0 {
+  border-radius: none;
+}
+
+.radius-t-l-0{
+  border-top-left-radius: 0
+}
+
+.radius-t-r-0{
+  border-top-right-radius: 0
+}
+
+.radius-b-l-0{
+  border-bottom-left-radius: 0
+}
+
+.radius-b-r-0{
+  border-bottom-right-radius: 0
+}
+
 
 
 
