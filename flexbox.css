@@ -403,6 +403,7 @@ table {
     color: #181818
   }
 
+  /* Text colors and utilities */
   .text-white{
     color: #fff;
   }
@@ -432,6 +433,16 @@ table {
   }
   .text-special{
     color: #2c2c54
+  }
+
+  .uppercase {
+    text-transform: uppercase
+  }
+  .lowercase {
+    text-transform: lowercase
+  }
+  .capitalize {
+    text-transform: capitalize
   }
 
   /* Border */
