@@ -17,16 +17,42 @@
     img.img-wide{
         margin-bottom:24px;
     }
+    .title-header{
+        font-size: 4em;
+    }
     </style>
 </head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="javascript:void(0)"><i class="fa fa-users"></i></a></li>
-                <li><a href="javascript:void(0)"><i class="fa fa-users"></i></a></li>
-            </ul>
-        </nav>
-    </header>
+<body class="flex row justify-content-center p-t-16">
+    <div class="container flex col  col-span-10">
+        <header class="flex bg-info col-span-12">
+            <nav class=" navbar col-span-12 flex row wrap justify-content-space-between">
+                    <ul class="flex row wrap">
+                        <li><a href="javascript:void(0)">Home</a></li>
+                        <li class="dropdown flex col justify-content-stretch">
+                                <a class="dropbtn">Products</a>
+                                <div class="dropdown-content flex col bg-white">
+                                <a href="javascript:void(0)">Produc 1</a>
+                                <a href="javascript:void(0)">Produc 2</a>
+                                <a href="javascript:void(0)">Produc 3</a>
+                                </div>
+                        </li>
+                    </ul>
+                    <ul class="flex row wrap">
+                        <li><a href="javascript:void(0)">Contact</a></li>
+                        <li><a href="javascript:void(0)">Connexion</a></li>
+                    </ul>
+            </nav>
+        </header>
+        <div class=" m-t-16 flex row justify-content-center align-items-center" style="background-image:url('images/matt-lamers-261639-unsplash.jpg');background-size:cover;height:300px;background-position:top center">
+            <h1 class="text-white text-shadow-2 title-header">ACME Company</h1>
+        </div>
+
+        <section class="m-t-16 flex row justify-content-space-between">
+            <div class="bg-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin hendrerit commodo ultrices.</div>
+            <div class="bg-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin hendrerit commodo ultrices.</div>
+            <div class="bg-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin hendrerit commodo ultrices.</div>
+        </section>
+
+    </div>
 </body>
 </html>
