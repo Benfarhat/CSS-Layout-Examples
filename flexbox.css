@@ -61,6 +61,7 @@ table {
     margin:0;
     padding:0;
     line-height: 1.5em;
+    display:flex;
   }
   a{
     text-decoration: none
@@ -218,6 +219,8 @@ table {
   .flex-item-none{
     flex: 0 0 auto;
   }
+
+  /* > ALIGNMENT */
 
   /* Align-self */
   .align-self-auto {
@@ -897,6 +900,19 @@ img {
 .img-wide{
   width:100%;
   height: auto;
+}
+
+/* Fixed top header */
+
+body.fixed-top-header{
+  padding-top:48px;
+}
+
+body.fixed-top-header .fixed-top-header{
+  position:fixed;
+  top:0;
+  width:100%;
+  z-index:9999;
 }
 
 /* Media */
