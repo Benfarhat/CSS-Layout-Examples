@@ -22,8 +22,15 @@
 <body class="fixed-top-header">
     <div class="flex col">
         <header class="flex row text-white fixed-top-header">
-            <div class="bg-success col-span-2 flex justify-content-center align-items-center">
-                <span><a class="p-4-8" href="javascript:void(0)">Company</a></span>
+            <div class="bg-success col-span-2 flex justify-content-stretch align-items-stretch">
+                <span class="flex row wrap flex-grow-1 justify-content-space-around">
+                        <a class="flex align-self-center" href="javascript:void(0)">
+                            <img class="m-r-8 align-items-center rounded" src="https://placeimg.com/24/24/people" alt="placeimg.com" />Company
+                        </a>
+                        <a class="align-self-center" href="javascript:void(0)">
+                            
+                        </a>
+                </span>
             </div>
             <nav class="bg-info navbar col-span-10 flex row wrap justify-content-space-between">
                     <ul class="flex row p-0 m-0 justify-content-space-between">
@@ -44,31 +51,47 @@
                         <li><a href="javascript:void(0)">help</a></li>
                         
                         <li class="dropdown flex col justify-content-stretch">
-                                        <a class="dropbtn">Dropdown Menu</a>
-                                        <div class="dropdown-content flex col bg-light">
-                                          <a href="javascript:void(0)">Link 1</a>
-                                          <a href="javascript:void(0)">Link 2</a>
-                                          <a href="javascript:void(0)">Link 3</a>
-                                        </div>
+                            <a class="dropbtn">Demonstrations</a>
+                            <div class="dropdown-content flex col bg-light">
+                                <a href="#breadcrumb"><i class="fa fa-address-book"></i> Breadcrumb </a>
+                                <a href="javascript:void(0)"><i class="fa fa-comments"></i> float picture </a>
+                                <a  href="#float-picture"><i class="fa fa-at"></i> picture effect </a>
+                                <a href="#picture-wide"><i class="fa fa-bell"></i> picture wide </a>
+                                <a href="#first-letter"><i class="fa fa-briefcase"></i> First letter </a>
+                                <a href="#buttons"><i class="fa fa-coffee"></i> Buttons </a>
+                                <a href="#dropdown"><i class="fa fa-cogs"></i> Dropdown </a>
+                                <a href="#radius-rounded"><i class="fa fa-file-alt"></i> Radius and rounded </a>
+                                <a href="#shadow"><i class="fa fa-coffee"></i> Shadow </a>
+                                <a href="#badge"><i class="fa fa-cogs"></i> Badge </a>
+                                <a href="#button-badge"><i class="fa fa-file-alt"></i> Button with badge </a>
+                            </div>
                         </li>
                     </ul>
                 </nav> 
         </header>
         <div class="flex row">
-            <aside class="col-span-2 p-0 m-0 bg-dark flex col sidebar p-t-16">
-                <span class="p-8-16 bab">SIDEBAR</span>
-                <a class="p-8-16 bab" href="javascript:void(0)"><i class="fa fa-address-book"></i> Menu 1 </a>
-                <a class="p-8-16 bab" href="javascript:void(0)"><i class="fa fa-comments"></i> Menu 2 </a>
-                <a class="p-8-16 bab" href="javascript:void(0)"><i class="fa fa-at"></i> Menu 3 </a>
-                <a class="p-8-16 bab" href="javascript:void(0)"><i class="fa fa-bell"></i> Menu 4 </a>
-                <a class="p-8-16 bab" href="javascript:void(0)"><i class="fa fa-briefcase"></i> Menu 5 </a>
-                <a class="p-8-16 bab" href="javascript:void(0)"><i class="fa fa-coffee"></i> Menu 6 </a>
-                <a class="p-8-16 bab" href="javascript:void(0)"><i class="fa fa-cogs"></i> Menu 7 </a>
-                <a class="p-8-16 bab" href="javascript:void(0)"><i class="fa fa-file-alt"></i> Menu 8 </a>
+            <aside class="col-span-2 p-0 m-0 bg-dark flex col sidebar p-t-16 active-success">
+                <nav class="flex col">
+                    <span class="p-8-16 bab">SIDEBAR</span>
+                    <a class="p-8-16 bab" href="#breadcrumb"><i class="fa fa-address-book"></i> Breadcrumb </a>
+                    <a class="active p-8-16 bab" href="javascript:void(0)"><i class="fa fa-comments"></i> float picture </a>
+                    <a class="p-8-16 bab" href="#float-picture"><i class="fa fa-at"></i> picture effect </a>
+                    <a class="p-8-16 bab" href="#picture-wide"><i class="fa fa-bell"></i> picture wide </a>
+                    <a class="p-8-16 bab" href="#first-letter"><i class="fa fa-briefcase"></i> First letter </a>
+                    <a class="p-8-16 bab" href="#buttons"><i class="fa fa-coffee"></i> Buttons </a>
+                    <a class="p-8-16 bab" href="#dropdown"><i class="fa fa-cogs"></i> Dropdown </a>
+                    <a class="p-8-16 bab" href="#radius-rounded"><i class="fa fa-file-alt"></i> Radius and rounded </a>
+                    <a class="p-8-16 bab" href="#shadow"><i class="fa fa-coffee"></i> Shadow </a>
+                    <a class="p-8-16 bab" href="#badge"><i class="fa fa-cogs"></i> Badge </a>
+                    <a class="p-8-16 bab" href="#button-badge"><i class="fa fa-file-alt"></i> Button with badge </a>
+                </nav>
+                <nav class="flex col p-8">
+                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin hendrerit commodo ultrices. Cras cursus arcu ut augue sagittis, sit amet egestas nunc rhoncus. Aenean elementum nec nunc vitae finibus. Nullam risus risus, egestas in efficitur vel, euismod in nisi. Mauris sem nunc, varius et rhoncus at, gravida et neque. Nulla facilisi. Suspendisse potenti. Duis blandit nulla at ornare ullamcorper.</span>
+                </nav>
             </aside>
             
             <section class="col-span-10 p-b-32 text-justify flex col">
-                <div class="breadcrumb bg-light">
+                <div id="breadcrumb" class="breadcrumb bg-light">
                     <ul class="flex row">
                         <li>Home</li>
                         <li><a href="javascript:void(0)">categorie</a></li>
@@ -92,20 +115,20 @@
                 </div>
 
 
-                <article>
+                <article id="float-picture">
                     <img class="m-t-8 img-right" src="https://picsum.photos/100/200/?random" alt="picsum.photos" />
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin hendrerit commodo ultrices. Cras cursus arcu ut augue sagittis, sit amet egestas nunc rhoncus. Aenean elementum nec nunc vitae finibus. Nullam risus risus, egestas in efficitur vel, euismod in nisi. Mauris sem nunc, varius et rhoncus at, gravida et neque. Nulla facilisi. Suspendisse potenti. Duis blandit nulla at ornare ullamcorper. Maecenas volutpat sollicitudin enim, non volutpat turpis facilisis a. Nam malesuada, felis suscipit imperdiet accumsan, tellus sem facilisis felis, nec interdum orci nibh ut ex. Mauris lacinia porta neque at ultricies. Cras tincidunt arcu sem, et tincidunt dolor commodo et. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin hendrerit commodo ultrices. Cras cursus arcu ut augue sagittis, sit amet egestas nunc rhoncus. Aenean elementum nec nunc vitae finibus. Nullam risus risus, egestas in efficitur vel, euismod in nisi. Mauris sem nunc, varius et rhoncus at, gravida et neque. Nulla facilisi. Suspendisse potenti. Duis blandit nulla at ornare ullamcorper. Maecenas volutpat sollicitudin enim, non volutpat turpis facilisis a. Nam malesuada, felis suscipit imperdiet accumsan, tellus sem facilisis felis, nec interdum orci nibh ut ex. Mauris lacinia porta neque at ultricies. Cras tincidunt arcu sem, et tincidunt dolor commodo et.</p>
                         <p>Nullam in mauris ex. Donec vel consectetur nisi. Duis porta turpis lorem, in condimentum massa lacinia in. Vivamus imperdiet eros elit, quis ornare turpis blandit ac. Aenean a nisi at erat mollis iaculis. In consequat nunc non mauris malesuada malesuada. Ut maximus quis sem sit amet fringilla. Pellentesque sagittis arcu quis ligula ultrices fringilla. Quisque finibus commodo nulla posuere mattis.</p>
                 </article>
                 <article>
                     <p>Image effects</p>
-                    <div class="flex row justify-content-space-between wrap">
+                    <div id="picture-effect" class="flex row justify-content-space-between wrap">
                         <img class="m-t-32" src="https://picsum.photos/200/300/?random" alt="picsum.photos" />
                         <img class="m-t-32 sepia" src="https://picsum.photos/200/300/?random" alt="picsum.photos" />
                         <img class="m-t-32 grayscale" src="https://picsum.photos/200/300/?random" alt="picsum.photos" />
                     </div>
-                    <img class="m-t-32 img-wide" src="https://picsum.photos/800/200/?gravity=east" alt="picsum.photos" />
-                    <p class="first-letter-2 first-letter-info">Praesent dignissim id nibh in luctus. Nam sed tincidunt leo. Nulla ut metus eget ante porta sodales vel a sapien. Etiam sit amet ultrices tellus, sed maximus nunc. Nam ac elementum dolor. Aenean aliquam, ante sit amet pellentesque fermentum, tortor nunc egestas nunc, sed vehicula ex nibh vel tortor. Mauris dapibus sem at libero eleifend, ac consequat odio volutpat. Proin hendrerit commodo ultrices. Cras cursus arcu ut augue sagittis, sit amet egestas nunc rhoncus. Aenean elementum nec nunc vitae finibus. Nullam risus risus, egestas in efficitur vel, euismod in nisi. Mauris sem nunc, varius et rhoncus at, gravida et neque. Nulla facilisi. Suspendisse potenti. Duis blandit nulla at ornare ullamcorper. Maecenas volutpat sollicitudin enim, non volutpat turpis facilisis a. Nam malesuada, felis suscipit imperdiet accumsan, tellus sem facilisis felis, nec interdum orci nibh ut ex. Mauris lacinia porta neque at ultricies. Cras tincidunt arcu sem, et tincidunt dolor commodo et.</p>
+                    <img id="picture-wide" class="m-t-32 img-wide" src="https://picsum.photos/800/200/?gravity=east" alt="picsum.photos" />
+                    <p id="first-letter" class="first-letter-2 first-letter-info">Praesent dignissim id nibh in luctus. Nam sed tincidunt leo. Nulla ut metus eget ante porta sodales vel a sapien. Etiam sit amet ultrices tellus, sed maximus nunc. Nam ac elementum dolor. Aenean aliquam, ante sit amet pellentesque fermentum, tortor nunc egestas nunc, sed vehicula ex nibh vel tortor. Mauris dapibus sem at libero eleifend, ac consequat odio volutpat. Proin hendrerit commodo ultrices. Cras cursus arcu ut augue sagittis, sit amet egestas nunc rhoncus. Aenean elementum nec nunc vitae finibus. Nullam risus risus, egestas in efficitur vel, euismod in nisi. Mauris sem nunc, varius et rhoncus at, gravida et neque. Nulla facilisi. Suspendisse potenti. Duis blandit nulla at ornare ullamcorper. Maecenas volutpat sollicitudin enim, non volutpat turpis facilisis a. Nam malesuada, felis suscipit imperdiet accumsan, tellus sem facilisis felis, nec interdum orci nibh ut ex. Mauris lacinia porta neque at ultricies. Cras tincidunt arcu sem, et tincidunt dolor commodo et.</p>
                 </article>
                 <article>
                     <img class="m-t-32 img-left" src="https://picsum.photos/200/100/?random" alt="picsum.photos" />
@@ -113,7 +136,7 @@
                     <p class="first-letter-4 first-letter-danger">Fusce ac nisi pulvinar, accumsan libero congue, euismod diam. Suspendisse et tellus a ex gravida rhoncus. Donec tortor sem, ultrices iaculis ultrices eu, interdum vitae nulla. Suspendisse id iaculis urna. Proin hendrerit commodo ultrices. Cras cursus arcu ut augue sagittis, sit amet egestas nunc rhoncus. Aenean elementum nec nunc vitae finibus. Nullam risus risus, egestas in efficitur vel, euismod in nisi. Mauris sem nunc, varius et rhoncus at, gravida et neque. Nulla facilisi. Suspendisse potenti. Duis blandit nulla at ornare ullamcorper. Maecenas volutpat sollicitudin enim, non volutpat turpis facilisis a. Nam malesuada, felis suscipit imperdiet accumsan, tellus sem facilisis felis, nec interdum orci nibh ut ex. Mauris lacinia porta neque at ultricies. Cras tincidunt arcu sem, et tincidunt dolor commodo et. Nam non dignissim purus. Vivamus consequat nibh eleifend ligula lobortis, quis sodales justo facilisis. Nam sit amet ex quam. Integer lacinia ac ex quis vehicula.</p>
 
                 </article>
-                <article>
+                <article id="buttons">
                     <p>Buttons:
                         <a class="btn bg-primary" href="javascript:void(0)">Primary Link</a>
                         <a class="btn bg-success" href="javascript:void(0)">Success Link</a>
@@ -123,7 +146,7 @@
                         
                     </p>
                 </article>
-                <article>
+                <article id="dropdown">
                     <p>Dropdown Buttons:
                         
                         <div class="dropdown btn flex col justify-content-stretch bg-info">
@@ -174,7 +197,7 @@
                         
                     </p>
                 </article>
-                <article>
+                <article id="radius-rounded">
                         <p>Radius and rounded</p>
                         <div class="flex row justify-content-space-between align-content-space-around wrap" style="min-height:500px">
                             <img class="m-r-8" src="https://placeimg.com/200/200/people/sepia" alt="placeimg.com" />
@@ -189,7 +212,7 @@
                             <img class="m-r-8 rounded radius-b-l-0" src="https://placeimg.com/200/200/nature/sepia" alt="placeimg.com" />
                         </div>
                 </article>
-                <article>
+                <article id="shadow">
                         <p>Shadow</p>
                             <div class="flex row justify-content-space-between wrap">
                             <img class="m-r-8 shadow-2" src="https://placeimg.com/200/200/people/sepia" alt="placeimg.com" />
@@ -200,9 +223,9 @@
                 </article>
                 <article>
                     <p>Badge</p>
-                    <p class="first-letter-3">Aliquam <span class="badge badge-danger">sollicitudin</span> mauris est, non sagittis est consectetur ultrices. In <span class="badge badge-success">feugiat egestas</span> tempor. Proin accumsan, lacus eget dictum finibus, tellus nisl convallis est, sit amet porta ante diam id ligula. Praesent pellentesque risus et odio maximus fermentum. In ac tortor pretium, placerat massa nec, pretium metus. Pellentesque luctus, nibh iaculis consectetur volutpat, sem enim congue enim, in tincidunt nisi erat quis urna. Nulla pharetra rutrum ultricies.</p>
+                    <p id="badge" class="first-letter-3">Aliquam <span class="badge badge-danger">sollicitudin</span> mauris est, non sagittis est consectetur ultrices. In <span class="badge badge-success">feugiat egestas</span> tempor. Proin accumsan, lacus eget dictum finibus, tellus nisl convallis est, sit amet porta ante diam id ligula. Praesent pellentesque risus et odio maximus fermentum. In ac tortor pretium, placerat massa nec, pretium metus. Pellentesque luctus, nibh iaculis consectetur volutpat, sem enim congue enim, in tincidunt nisi erat quis urna. Nulla pharetra rutrum ultricies.</p>
                     <p>Nullam in mauris ex. Donec vel <span class="badge badge-primary">consectetur</span> nisi. Duis porta turpis lorem, <span class="badge badge-info rounded">1</span> condimentum massa lacinia in. Vivamus imperdiet eros elit, quis ornare turpis blandit ac. Aenean a nisi at erat mollis iaculis. In consequat nunc non mauris malesuada malesuada. Ut maximus quis sem sit amet fringilla. Pellentesque sagittis arcu quis ligula ultrices fringilla. Quisque finibus commodo nulla posuere mattis.</p><a class="btn bg-info" href="javascript:void(0)"><i class="fa fa-plus"></i> Read more ...</a>
-                    <a class="btn bg-warning" href="javascript:void(0)">Link btn with badge<span class="badge badge-light rounded right small">1</span></a>
+                    <a id="button-badge" class="btn bg-warning" href="javascript:void(0)">Link btn with badge<span class="badge badge-light rounded right small">1</span></a>
                     <a class="btn bg-success" href="javascript:void(0)">Link btn with badge<span class="badge badge-light rounded right big">23</span></a>
                     <a class="btn bg-danger" href="javascript:void(0)">Link btn with badge<span class="badge badge-light rounded right">5</span></a>
                 </article>

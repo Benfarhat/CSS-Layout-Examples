@@ -51,6 +51,9 @@ table {
 	border-spacing: 0;
 }
 
+footer{
+  z-index:1;
+}
 /* /Reset */
 
 * {
@@ -499,9 +502,51 @@ table {
   .sidebar{
 
   }
+  .sidebar a.active{
+    border-left:4px solid #bbb
+  }
+
+  .active-primary a.active{
+    border-left:4px solid #353564
+  }
+  .active-success a.active{
+    border-left:4px solid #186748
+  }
+  .active-danger a.active{
+    border-left:4px solid #9b3131
+  }
+  .active-info a.active{
+    border-left:4px solid #184e67
+  }
+  .active-warning a.active{
+    border-left:4px solid #a44d28
+  }
+  .active-dark a.active{
+    border-left:4px solid #212121
+  }
+
   .sidebar a:hover{
     background-color: #ddd
+  }  
+  .active-primary a:hover{
+    background-color: #353564
   }
+  .active-success a:hover{
+    background-color: #186748
+  }
+  .active-danger a:hover{
+    background-color: #9b3131
+  }
+  .active-info a:hover{
+    background-color: #184e67
+  }
+  .active-warning a:hover{
+    background-color: #a44d28
+  }
+  .active-dark a:hover{
+    background-color: #212121
+  }
+
 
   /* Img */
   img{
