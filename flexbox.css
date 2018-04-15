@@ -111,6 +111,8 @@ footer{
     flex-wrap: wrap-reverse
   }
 
+  /* Align items in Main Axis */
+
   /* Justify-content */
   .justify-content-start{
       justify-content: start
@@ -127,6 +129,8 @@ footer{
   .justify-content-space-between{
       justify-content: space-between
   }
+
+  /* Align items in Cross Axis */
 
   /* Align-items */
   .align-items-start{
@@ -145,6 +149,7 @@ footer{
       align-items: baseline
   }
 
+  /* Extra space items in Cross Axis */
   /* Align-content */
   .align-content-start{
     align-content: flex-start
