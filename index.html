@@ -6,14 +6,16 @@
             <meta http-equiv="X-UA-Compatible" content="ie=edge">
             <title>Flexbox demo</title>
             <link href='flexbox.css' rel='stylesheet'>
-            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
             <style>
                 html, body{
                     height: 100%;
                 }
-                header h1{
+                h1{
                     font-size: 0.95vw;
                     letter-spacing: 0.25vw;
+                }
+                h1 span{
+                    font-size: 2.5vw
                 }
                 div{
                     padding: 32px 32px;
@@ -22,28 +24,28 @@
 
             </style>
         </head>
-	<body class="flex row justify-content-stretch align-items-stretch">
+	<body class="flex row wrap justify-content-stretch align-items-stretch">
         
             <a class="bg-info flex col justify-content-center align-items-center flex-grow-1" target="blank" href="demo1.html">
-                <h1>Demo 1</h1>
+                <h1 class="uppercase">Demo <span>1</span></h1>
                 <span>Admin like template</span>
             </a>
         
         
             <a class="bg-danger flex col justify-content-center align-items-center flex-grow-1" target="blank" href="demo2.html">
-                <h1>Demo 2</h1>
+                <h1 class="uppercase">Demo  <span>2</span></h1>
                 <span>Simple blog template</span>
             </a>
     
     
             <a class="bg-success flex col justify-content-center align-items-center flex-grow-1" target="blank" href="demo3.html">
-                <h1>Demo 1</h1>
+                <h1 class="uppercase">Demo  <span>3</span></h1>
                 <span>Classic template with 2 sidebars</span>
             </a>
 
 
             <a class="bg-warning flex col justify-content-center align-items-center flex-grow-1" target="blank" href="demo4.html">
-                <h1>Demo 1</h1>
+                <h1 class="uppercase">Demo  <span>4</span></h1>
                 <span>Classics template with collapsible elements</span>
             </a>
 
@@ -52,10 +54,6 @@
                 <h1>Flexbox CSS Demo</h1>
                 <span>by Benfarhat Elyes</span>
             </a>
-                                        
-        <!-- jQuery 3.3.1 slim minified -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-        <!-- Custom scripts -->
-        <script src="flexbox.js"></script>
+
     </body>
 </html>
