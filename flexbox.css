@@ -365,9 +365,6 @@ footer{
   .m-r-32 { margin-right: 32px !important; }
   .m-32 { margin: 32px !important; }
 
-  [class^="col-span-"]{
-    padding: 8px 16px
-  }
 
 
   /* Color */
@@ -466,6 +463,10 @@ footer{
     text-transform: capitalize
   }
 
+  .justify{
+    text-align: justify
+  }
+
   /* Border */
   /* bwl mean border - white - left */
   .bwl {
@@ -486,19 +487,19 @@ footer{
 
   /* bbl mean border - black - left */
   .bbl {
-    border-left: 1px solid #212121;
+    border-left: 1px solid #aaa;
   }
   .bbt {
-    border-top: 1px solid #212121;
+    border-top: 1px solid #aaa;
   }
   .bbr {
-    border-right: 1px solid #212121;
+    border-right: 1px solid #aaa;
   }
   .bbb {
-    border-bottom: 1px solid #212121;
+    border-bottom: 1px solid #aaa;
   }
   .b-b{
-    border: 1px solid #212121
+    border: 1px solid #aaa
   }
 
   /* bal mean border - alpha - left */
@@ -576,7 +577,7 @@ footer{
   /* Panel */
 
   .panel {
-    margin: 8px 16px;
+    padding: 8px 16px;
   }
 
   /* border */
