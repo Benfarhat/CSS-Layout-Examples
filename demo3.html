@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <title>Flexbox demo</title>
+            <link href='flexbox.css' rel='stylesheet'>
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+            <style>
+                header h1{
+                    font-size: 0.95vw;
+                    letter-spacing: 0.25vw;
+                }
+                nav ul:first-child li {
+                    margin-right:16px;
+                    font-size:0.9rem;
+                }
+                nav ul:last-child li {
+                    margin-left:16px;
+                    font-size:0.9rem;
+                }
+            </style>
+        </head>
+	<body class="flex col wrap">
+        
+        <header class="panel bg-info flex row align-items-center">
+            <h1 class="col-span-2 uppercase">Organisation Name</h1>
+            <nav class="col-span-10 flex row wrap justify-content-space-between">
+                <ul class="flex row wrap">
+                    <li>Link</li>
+                    <li>Link</li>
+                    <li>Link</li>
+                    <li>Link</li>
+                </ul>
+                <ul class="flex row wrap">
+                    <li>Link</li>
+                    <li>Link</li>
+                    <li>Link</li>
+                    <li>Link</li>
+                </ul>
+            </nav>
+        </header>
+            
+        <main class="bg-danger flex row wrap">
+            <nav class="panel bg-danger col-span-2 flex col">
+                <h1>Navigation</h1>
+                <span>Element 1</span>
+                <span>Element 2</span>
+                <span>Element 3</span>
+                <span>Element 4</span>
+                <span>Element 5</span>
+            </nav>
+            <section class="panel bg-success col-span-8">
+            <article>
+                <h1>title</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin hendrerit commodo ultrices.</p>
+            </article>
+            <article>
+                <h1>title</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin hendrerit commodo ultrices.</p>
+            </article>
+            <article>
+                <h1>title</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin hendrerit commodo ultrices.</p>
+            </article>
+            </section>
+            <aside class="panel bg-warning col-span-2 flex col">
+                <h1>Sidebar</h1>
+                <span>Element 1</span>
+                <span>Element 2</span>
+                <span>Element 3</span>
+                <span>Element 4</span>
+                <span>Element 5</span>
+            </aside>
+        </main>
+        
+        <footer class="panel bg-dark flex row">
+            <span class="col-span-3 flex justify-content-start">
+                <h1>Footer</h1>
+            </span>
+            <span class="col-span-3 flex justify-content-center">
+                <h1>Footer</h1>
+            </span>
+            <span class="col-span-3 flex justify-content-center">
+                <h1>Footer</h1>
+            </span>
+            <span class="col-span-3 flex justify-content-end">
+                <h1>Footer</h1>
+            </span>
+        </footer>
+            
+	</body>
+</html>
