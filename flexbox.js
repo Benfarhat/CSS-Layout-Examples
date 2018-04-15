@@ -48,6 +48,9 @@ for(let i = 0; i < modifiers.length; i++){
             } else {
                 element.classList.add(className);
             }
+            /* or simply:
+            element.classList.toggle(className);
+            */
         }
 
         event.defaultPrevented;
