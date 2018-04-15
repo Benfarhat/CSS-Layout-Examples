@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <title>Flexbox demo</title>
+            <link href='flexbox.css' rel='stylesheet'>
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+            <style>
+                header h1{
+                    font-size: 0.95vw;
+                    letter-spacing: 0.25vw;
+                }
+                nav ul:first-child li {
+                    margin-right:16px;
+                    font-size:0.9rem;
+                }
+                nav ul:last-child li {
+                    margin-left:16px;
+                    font-size:0.9rem;
+                }
+                .content{
+                    transform: translate3d(0, 0, 0);
+                    transition: transform .3s;
+                }
+                .content.visible{
+                    transform: translate3d(220px, 0, 0);
+                }
+            </style>
+        </head>
+	<body class="flex col wrap">
+        
+        <header class="panel bg-dark flex row align-items-center">
+            <h1 class="col-span-2 uppercase">Organisation Name</h1>
+            <nav class="col-span-10 flex row wrap justify-content-space-between">
+                <ul class="flex row wrap">
+                    <li class="closure" data-target="#sidebar" data-expand="#main-content" data-expand-class="col-span-10"><i class="fa fa-bars"></i></li>
+                    <li><i class="fa fa-home"></i></li>
+                    <li>Templates</li>
+                    <li>Snippets</li>
+                </ul>
+                <ul class="flex row wrap">
+                    <li>Register</li>
+                    <li><i class="fab fa-facebook"></i></li>
+                    <li><i class="fab fa-twitter"></i></li>
+                    <li><i class="fab fa-youtube"></i></li>
+                    <li><i class="fab fa-instagram"></i></li>
+                    <li class="closure" data-target="#aside" data-expand="#main-content" data-expand-class="col-span-10"><i class="fa fa-bars"></i></li>
+                </ul>
+            </nav>
+        </header>
+            
+        <main class="bg-danger flex row">
+            <nav id="sidebar" class="panel bg-danger col-span-2">
+                <div class="flex col">
+                    <h1>Navigation</h1>
+                    <span>Element 1</span>
+                    <span>Element 2</span>
+                    <span>Element 3</span>
+                    <span>Element 4</span>
+                    <span>Element 5</span>
+                </div>
+            </nav>
+            <section id="main-content" class="panel bg-light flex col col-span-8">
+            <article>
+                <h1>title</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id justo malesuada arcu aliquet tristique vel at justo. Mauris eu feugiat quam. Interdum et malesuada fames ac ante ipsum primis in faucibus..</p>
+            </article>
+            <article>
+                <h1>title</h1>
+                <p>Donec mollis elit non est sollicitudin bibendum. Quisque id accumsan leo. Duis ipsum odio, interdum ut tincidunt venenatis, pulvinar a lectus.</p>
+            </article>
+            <article>
+                <h1>title</h1>
+                <p>Donec accumsan tempor augue, vel posuere arcu pellentesque at. Sed quis mi eu lacus porttitor porta sed vitae augue. Nunc fermentum libero non dolor placerat consequat. Nulla in mauris rutrum, molestie lacus sit amet, tincidunt eros. Etiam urna nibh, consequat ut justo in, rhoncus pretium lacus.</p>
+            </article>
+            </section>
+            <aside id="aside" class="panel bg-warning col-span-2">
+                <div class="flex col">
+                    <h1>Sidebar</h1>
+                    <span>Element 1</span>
+                    <span>Element 2</span>
+                    <span>Element 3</span>
+                    <span>Element 4</span>
+                    <span>Element 5</span>
+                </div>
+            </aside>
+        </main>
+        
+        <footer class="panel bg-dark flex row">
+            <span class="col-span-3 flex justify-content-start">
+                <h1>Footer</h1>
+            </span>
+            <span class="col-span-3 flex justify-content-center">
+                <h1>Footer</h1>
+            </span>
+            <span class="col-span-3 flex justify-content-center">
+                <h1>Footer</h1>
+            </span>
+            <span class="col-span-3 flex justify-content-end">
+                <h1>Footer</h1>
+            </span>
+        </footer>
+           
+        <!-- jQuery 3.3.1 slim minified -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <!-- Custom scripts -->
+        <script src="flexbox.js"></script>
+    </body>
+</html>
