@@ -24,6 +24,7 @@ Plus de détails [ici](https://caniuse.com/#feat=css-grid)
 ## Grid container
 
 Un conteneur de grille se déclare en mettand la valeur `grid` ou `inline-grid` à la propriété `display`. Pour les grilles imbriqués, c'est la valeur `subgrid` qui doit être utilisée.
+La valeur `grid` permet de prendre toute la place du conteneur, alors que la valeur `inline-grid`, juste la place occupée par le contenu
 
 ## Taille des gaps
 
