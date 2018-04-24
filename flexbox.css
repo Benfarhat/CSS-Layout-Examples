@@ -89,6 +89,17 @@ footer{
       display: inline-flex;
   }
 
+  /* Other */
+  .hidden {
+    display: none !important;
+  }
+  .block {
+    display: block;
+  }
+  .inline-block {
+    display: inline-block;
+  }
+
   /* Flex-direction */
   .row{
       flex-direction: row
@@ -129,6 +140,9 @@ footer{
   .main-axis-space-between, .justify-content-space-between{
       justify-content: space-between
   }
+  .main-axis-space-evenly, .justify-content-space-evenly{
+      justify-content: space-evenly
+  }
 
   /* Align items in Cross Axis */
 
@@ -168,6 +182,28 @@ footer{
   }
   .cross-axis-extra-space-around, .align-content-space-around{
       align-content: space-around
+  }
+
+    /* > ALIGNMENT */
+
+  /* Align-self */
+  .align-self-auto {
+    align-self: auto;
+  }
+  .align-self-start {
+      align-self: flex-start;
+  }
+  .align-self-center {
+      align-self: center;
+  }
+  .align-self-end {
+      align-self: flex-end;
+  }
+  .align-self-stretch {
+      align-self: stretch;
+  }
+  .align-self-baseline {
+      align-self: baseline;
   }
 
   /* Flex-items properties */
@@ -228,27 +264,7 @@ footer{
     flex: 0 0 auto;
   }
 
-  /* > ALIGNMENT */
 
-  /* Align-self */
-  .align-self-auto {
-      align-self: auto;
-  }
-  .align-self-start {
-      align-self: flex-start;
-  }
-  .align-self-center {
-      align-self: center;
-  }
-  .align-self-end {
-      align-self: flex-end;
-  }
-  .align-self-stretch {
-      align-self: stretch;
-  }
-  .align-self-baseline {
-      align-self: baseline;
-  }
 
   /* Flex-basis */
   .basis-auto {
@@ -756,16 +772,13 @@ footer{
   display: none;
   position: absolute;
   /*top:32px;*/
-  top: 1.75em;
+  top:2.2em;
+  bottom:auto;
   left: 0;
-  width:100%;
+  width:auto;
+  min-width:160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
-}
-
-.left .dropdown-content {
-    right: 0;
-    left: auto;
 }
 
 .dropdown-content a {
@@ -1037,11 +1050,27 @@ body.fixed-top-header .fixed-top-header{
   z-index:9999;
 }
 
+/* Special Large-small */
+
+.hide-small{
+  display: inherit;
+}
+.hide-large{
+  display:none;
+}
+
 /* Media */
 
 
   /* screens that are 600px wide or less */
   @media screen and (max-width: 600px) {
+    
+    .hide-small{
+      display: none;
+    }
+    .hide-large{
+      display:inherit;
+    }
     .row {
       flex-direction: column;
     }
